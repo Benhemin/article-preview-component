@@ -1,0 +1,262 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ECF2F8;
+  font-family: "Manrope", sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 300px) {
+  img {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+@media (min-width: 905px) {
+  img {
+    border-radius: 10px 0px 0px 10px;
+  }
+}
+
+.card {
+  display: flex;
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  filter: drop-shadow(0px 40px 40px -10px rgba(255, 213, 225, 0.5));
+}
+@media (min-width: 300px) {
+  .card {
+    min-height: 77%;
+    height: fit-content;
+    width: 87%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 905px) {
+  .card {
+    min-height: 28.7%;
+    height: fit-content;
+    width: 50.7%;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 300px) {
+  .card-img {
+    height: 39%;
+    width: 100%;
+  }
+}
+@media (min-width: 905px) {
+  .card-img {
+    height: 100%;
+    width: 39%;
+  }
+}
+
+.card-content {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+}
+@media (min-width: 300px) {
+  .card-content {
+    width: 100%;
+    min-height: 61%;
+    height: fit-content;
+  }
+}
+@media (min-width: 905px) {
+  .card-content {
+    height: 100%;
+    width: 61%;
+  }
+}
+
+.main-text {
+  width: 82%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 40px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #48556A;
+}
+
+.sub-text {
+  width: 82%;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 40px;
+  color: #6E8098;
+}
+
+.author {
+  text-align: left;
+  justify-self: left;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.author-name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-and-share {
+  width: 82%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 40px;
+}
+@media (min-width: 300px) {
+  .author-and-share {
+    margin-top: 20px;
+  }
+}
+
+.img-container {
+  height: 40px;
+  width: 40px;
+}
+
+.share-img-container {
+  height: 20px;
+  width: 20px;
+}
+
+.author-img {
+  border-radius: 50%;
+}
+
+.author-name {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.author-date {
+  font-size: 13px;
+  font-weight: 400;
+  color: #9DAEC2;
+}
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.icon-share {
+  background: url(./images/icon-share.svg), #ECF2F8;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-share:hover {
+  background: url(./images/icon-share-hover.svg), #6E8098;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.share-widget-buttons {
+  display: flex;
+  flex-direction: row;
+  background-color: #48556A;
+  gap: 16px;
+}
+
+.share-stuff {
+  position: relative;
+}
+
+.share-text {
+  font-family: "Manrope", sans-serif;
+  line-height: 20px;
+  letter-spacing: 5px;
+  color: #9DAEC2;
+  font-weight: 400;
+}
+
+.hide {
+  display: none;
+}
+
+.share-widget {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  justify-content: center;
+  align-items: center;
+  background-color: #48556A;
+}
+@media (min-width: 300px) {
+  .share-widget {
+    width: 100%;
+    height: 40px;
+  }
+}
+@media (min-width: 905px) {
+  .share-widget {
+    width: 248px;
+    height: 25px;
+    position: absolute;
+    left: -124px;
+    top: -65px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Optional: Set a maximum width */
+  }
+}
+
+/* Triangle on the bottom */
+@media (min-width: 905px) {
+  .share-widget::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    border-color: #48556A transparent transparent transparent;
+  }
+}
+
+.share-img {
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
