@@ -12,11 +12,11 @@
   <script defer src="./index.js"></script>
 </head>
 <body>
-  <div class="card">
+  <div class="card" id="card">
     <div class="card-img">
       <img src="./images/drawers.jpg">  
     </div>
-    <div class="card-content">
+    <div class="card-content" id="card-content">
       <div class="main-text">
         Shift the overall look and feel by adding these wonderful touches to furniture in your home
       </div>
@@ -25,8 +25,25 @@
         it felt slightly bare and uninviting. I’ve got some simple tips 
         to help you make any room feel complete.
       </div>
-      <div class="author-and-share">
-        <div class="author">
+      <div class="hide" id="share-widget-mobile">
+        <div class="share-text">
+          SHARE
+        </div>
+        <div class="share-widget-buttons">
+          <div class="share-img-container">
+            <img class='share-img' src="./images/icon-facebook.svg">
+          </div>
+          <div class="share-img-container">
+            <img class='share-img' src="./images/icon-twitter.svg">
+          </div>
+          <div class="share-img-container">
+            <img class='share-img' src="./images/icon-pinterest.svg">
+          </div>
+        </div>
+        <span class="icon icon-share" id="share-btn-mobile"></span>
+      </div>
+      <div class="author-and-share" id="author-and-share">
+        <div class="author" id="author">
           <div class="img-container">
             <img class='author-img' src="./images/avatar-michelle.jpg">
           </div>
@@ -54,9 +71,7 @@
             </div>
           </div>
         </div>
-        
       </div>
-      
     </div>
   </div>
   <div class="attribution">
